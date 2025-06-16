@@ -1,0 +1,14 @@
+Date & Time:                 2025-05-04 11:31:13 PM (IST)
+Epochs Trained This Session: 1
+Total Epochs Trained So Far: 12
+Time Taken:                  0h 12m 24s
+Average Training Loss:       0.0126
+Average Validation Loss:     0.0345
+----------------------------------------
+Date & Time:                 2025-05-04 17:32:16
+Epochs Trained This Session: 1
+Total Epochs Trained So Far: 11
+Time Taken:                  0h 12m 26s
+Average Training Loss:       0.0127
+Average Validation Loss:     0.0232
+----------------------------------------
