@@ -40,7 +40,10 @@ A lightweight and robust image dehazing web application powered by a refined hyb
 
 - **Input Layer**: Accepts RGB images of any size `(None, None, 3)`.
 - **Multi-Scale Feature Extraction Block**: Series of 1×1, 3×3, 5×5, and 7×7 convolutions.
-- **AOD-Net Inspired Formula**: Applies the formula `J(x) = K(x) * I(x) - K(x) + 1` for transmission map estimation.
+- **AOD-Net Inspired Formula**: Applies the following formula for transmission map estimation.
+  ```
+  J(x) = K(x) * I(x) - K(x) + 1
+  ```
 - **Refinement Block**: 2-layer convolution with batch normalization.
 - **Output Layer**: Sigmoid activation for image reconstruction in the 0–1 range.
 
