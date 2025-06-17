@@ -1,13 +1,13 @@
-# 🌫️ Haze Buster - Image Revive
+# 🌫️ Haze Buster - Lightweight Hybrid CNN for Real-Time Image Dehazing with Perceptual Loss Optimization
 
 A lightweight and robust image dehazing web application powered by a refined hybrid CNN model inspired by AOD-Net.
 
 
 ## Project Overview
 
-**Haze Buster** is an end-to-end AI-based system that removes haze from real-world images using a custom-built deep learning model. The model enhances visibility in hazy images, trained on RESIDE's indoor dataset and deployed via a FastAPI backend for real-time image dehazing.
+**Haze Buster** is an end-to-end AI-based system that removes haze from real-world images using a custom-built deep learning model. The model enhances visibility in hazy images, trained on RESIDE's dataset and deployed via a FastAPI backend for real-time image dehazing.
 
-<a href="https://example.com" target="_blank">
+<a href="https://image-dehaze.vercel.app/" target="_blank">
   <img src="https://img.shields.io/badge/Image%20Dehazing%20Website-Visit-blue?style=for-the-badge&logo=github" alt="Image Dehazing Website"/>
 </a>
 
