@@ -82,9 +82,9 @@ A lightweight and robust image dehazing web application powered by a refined hyb
 
 - **Structural Similarity Index (SSIM)**: `Around 0.76 - 0.78` (on test samples)
   ```
-                     (2 × μₓ × μᵧ + C₁) × (2 × σₓᵧ + C₂)   
+                     (2 * μₓ * μᵧ + C₁) * (2 * σₓᵧ + C₂)   
       SSIM(x, y) =  ─────────────────────────────────────  
-                     (μₓ² + μᵧ² + C₁) × (σₓ² + σᵧ² + C₂) 
+                     (μₓ² + μᵧ² + C₁) * (σₓ² + σᵧ² + C₂) 
 
   Where:  
   - μₓ, μᵧ = Means of the two images  
@@ -123,7 +123,9 @@ A lightweight and robust image dehazing web application powered by a refined hyb
 - **Training Platform**: `Google Colab` (T4 GPU)
 - **Batch Size**: `1` (to preserve image quality)
 - **Floating Point Operations (FLOPs)**: `6,727,598,272` (6.7B+ FLOPs or 6727.60 MFLOPs)
-    - **FLOPs** = 2 × K<sub>h</sub> × K<sub>w</sub> × C<sub>in</sub> × H<sub>out</sub> × W<sub>out</sub> × C<sub>out</sub> 
+  ```
+  FLOPs = FLOPs = 2 × Kₕ × Kₓ × Cᵢₙ × Hₒᵤₜ × Wₒᵤₜ × Cₒᵤₜ
+  ```
 - **Dynamic Image Size Support**: Accepts RGB images of any size `(None, None, 3)`.
 - **Model saved as**: `aod_net_refined.keras`
 
