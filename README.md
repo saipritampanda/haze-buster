@@ -59,11 +59,39 @@ A lightweight and robust image dehazing web application powered by a refined hyb
 - **Validation Loss**: Shows generalization with acceptable fluctuation.
 - **Number of Epochs Trained**: 48
 
-### 2. Evaluation Metrics
-- **Loss Function**: Mean Squared Error (MSE)
-- **Peak Signal-to-Noise Ratio (PSNR)**: `> 60 dB` on validation set
-- **Structural Similarity Index (SSIM)**: `Around 0.76 - 0.78` (on test samples)
+## 2. Evaluation Metrics
 
+- **Loss Function**: Mean Squared Error (MSE)
+  ```
+         1
+  MSE = ─── * ∑(Yᵢ - Ŷᵢ)²
+         n
+
+  Where, Yᵢ and Ŷᵢ denote the ground truth and predicted pixel values respectively, and n is the total number of pixels.
+  ```
+
+- **Peak Signal-to-Noise Ratio (PSNR)**: `> 60 dB` on validation set
+  ```
+                     MAX²
+  PSNR = 10 * log₁₀ ──────
+                     MSE
+  Where,
+  - MAX is the highest possible intensity value a pixel can have in the image
+  - Mean Squared Error (MSE) is used both as a standalone loss function and for PSNR calculation.
+  ```
+
+- **Structural Similarity Index (SSIM)**: `Around 0.76 - 0.78` (on test samples)
+  ```
+                     (2 × μₓ × μᵧ + C₁) × (2 × σₓᵧ + C₂)   
+      SSIM(x, y) =  ─────────────────────────────────────  
+                     (μₓ² + μᵧ² + C₁) × (σₓ² + σᵧ² + C₂) 
+
+  Where:  
+  - μₓ, μᵧ = Means of the two images  
+  - σₓ², σᵧ² = Variances of the two images  
+  - σₓᵧ = Covariance between the images  
+  - C₁, C₂ = Constants for stability
+  ```
 
 
 ## 🖥️ Tech Stack
@@ -86,8 +114,16 @@ A lightweight and robust image dehazing web application powered by a refined hyb
 
 ## Training Info
 - **Dataset**: `RESIDE - ITS` (Indoor Training Set) || `Reside - SOTS` ,  `I-HAZE` & `D-HAZE` are removed for now
+- Data Split: `80:10:10`
+  - **80%** → Training Set  
+  - **10%** → Validation Set  
+  - **10%** → Testing Set
+- **Training Images per Epoch**: `13,000+`
+- **Trainable Parameters**: `1,54,308` (602.77 KB)
 - **Training Platform**: `Google Colab` (T4 GPU)
 - **Batch Size**: `1` (to preserve image quality)
+- **Floating Point Operations (FLOPs)**: `6,727,598,272` (6.7B+ FLOPs or 6727.60 MFLOPs)
+    - **FLOPs** = 2 × K<sub>h</sub> × K<sub>w</sub> × C<sub>in</sub> × H<sub>out</sub> × W<sub>out</sub> × C<sub>out</sub> 
 - **Dynamic Image Size Support**: Accepts RGB images of any size `(None, None, 3)`.
 - **Model saved as**: `aod_net_refined.keras`
 
@@ -131,7 +167,6 @@ A lightweight and robust image dehazing web application powered by a refined hyb
 ### 3. Website
 
 ![](Images/Results/Frontend/image3.png)
-
 
 
 ## 📄 License
