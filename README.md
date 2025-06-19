@@ -70,7 +70,9 @@ A lightweight and robust image dehazing web application powered by a refined hyb
   MSE = ─── * ∑(Yᵢ - Ŷᵢ)²
          n
 
-  Where, Yᵢ and Ŷᵢ denote the ground truth and predicted pixel values respectively, and n is the total number of pixels.
+  Where,
+  - Yᵢ and Ŷᵢ denote the ground truth and predicted pixel values respectively.
+  - n is the total number of pixels.
   ```
 
 - **Peak Signal-to-Noise Ratio (PSNR)**: `> 60 dB` on validation set
@@ -79,7 +81,7 @@ A lightweight and robust image dehazing web application powered by a refined hyb
   PSNR = 10 * log₁₀ ──────
                      MSE
   Where,
-  - MAX is the highest possible intensity value a pixel can have in the image
+  - MAX is the highest possible intensity value a pixel can have in the image.
   - Mean Squared Error (MSE) is used both as a standalone loss function and for PSNR calculation.
   ```
 
@@ -175,4 +177,4 @@ A lightweight and robust image dehazing web application powered by a refined hyb
 
 
 ## 📄 License
-This project is released under the MIT License.
+This project is released under the `MIT License`.
