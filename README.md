@@ -25,8 +25,7 @@ A lightweight and robust image dehazing web application powered by a refined hyb
 -->
 ![Project Time Spent](https://img.shields.io/badge/Project%20Time%20Spent-28%20Hours%2011%20Minutes-blue?logo=github&style=social)
 
-![Model Training Time](https://img.shields.io/badge/Model%20Training%20Time-11%20Hours%2006%20Minutes-blue?logo=github&style=social)
-
+![Model Training Time](https://img.shields.io/badge/Model%20Training%20Time-11%20Hours%2006%20Minutes-blue?logo=clockify&style=social)
 
 
 ## 🚀 Key Features
