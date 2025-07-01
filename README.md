@@ -7,9 +7,26 @@ A lightweight and robust image dehazing web application powered by a refined hyb
 
 **Haze Buster** is an end-to-end AI-based system that removes haze from real-world images using a custom-built deep learning model. The model enhances visibility in hazy images, trained on RESIDE's dataset and deployed via a FastAPI backend for real-time image dehazing.
 
-<a href="https://image-dehaze.vercel.app/" target="_blank">
-  <img src="https://img.shields.io/badge/Image%20Dehazing%20Website-Visit-blue?style=for-the-badge&logo=github" alt="Image Dehazing Website"/>
-</a>
+[![Image Dehazing Website](https://img.shields.io/badge/Image%20Dehazing%20Website-Visit-blue?style=for-the-badge&logo=github)](https://image-dehaze.vercel.app/)
+
+<!--
+![Project Time Spent](https://img.shields.io/badge/Project%20Time%20Spent-28%20hrs%2011%20mins-blue?logo=github&style=for-the-badge)
+
+![Project Time Spent](https://img.shields.io/badge/Project%20Time%20Spent-28%20hrs%2011%20mins-blue?logo=github&style=flat)
+
+![Project Time Spent](https://img.shields.io/badge/Project%20Time%20Spent-28%20hrs%2011%20mins-blue?logo=github&style=flat-square)
+
+![Project Time Spent](https://img.shields.io/badge/Project%20Time%20Spent-28%20hrs%2011%20mins-blue?logo=github&style=plastic)
+
+![Project Time Spent](https://img.shields.io/badge/Project%20Time%20Spent-28%20Hours%2011%20Minutes-logo=github&style=social)
+
+![Project Time Spent](https://img.shields.io/badge/Project%20Time%20Spent-28%20Hours%2011%20Minutes-blue?logo=github&style=social)
+
+-->
+![Project Time Spent](https://img.shields.io/badge/Project%20Time%20Spent-28%20Hours%2011%20Minutes-blue?logo=github&style=social)
+
+![Model Training Time](https://img.shields.io/badge/Model%20Training%20Time-11%20Hours%2006%20Minutes-blue?logo=github&style=social)
+
 
 
 ## 🚀 Key Features
